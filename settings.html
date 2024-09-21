@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>User Settings</h1>
+            <ul>
+                <li><a href="home_new.html">Home</a></li>
+                <li><a href="journal_2.html">Journal</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="resource.html">Resources</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Profile Settings</h2>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="password">Change Password</label>
+            <input type="password" id="password" placeholder="Enter new password">
+        </div>
+
+        <h2>Notification Preferences</h2>
+        <div class="form-group">
+            <label for="daily-reminder">
+                <input type="checkbox" id="daily-reminder">
+                Daily reminder to make an entry
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="weekly-summary">
+                <input type="checkbox" id="weekly-summary">
+                Weekly mood summary
+            </label>
+        </div>
+
+        <h2>Theme Options</h2>
+        <div class="form-group">
+            <label for="theme">Choose theme</label>
+            <select id="theme">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="color-scheme">Choose color scheme</label>
+            <input type="color" id="color-scheme" value="#4CAF50">
+        </div>
+
+        <h2>Data Management</h2>
+        <div class="form-group">
+            <button class="btn">Export Journal Entries</button>
+        </div>
+        <div class="form-group">
+            <button class="btn delete">Delete All Data</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Journal Insights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+

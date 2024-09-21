@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindfulMe - Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MindfulMe - Journal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="mood-tracker.html">Mood Tracker</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="journal-form">
+      <h2>New Journal Entry</h2>
+      <input type="date" id="entry-date">
+      <input type="text" id="entry-title" placeholder="Title">
+      <textarea id="entry-content" rows="10" placeholder="Write your thoughts..."></textarea>
+      <div class="mood-selection">
+        <label for="mood">Mood:</label>
+        <select id="entry-mood">
+          <option value="1">1 - Very Low</option>
+          <option value="2">2 - Low</option>
+          <option value="3">3 - Neutral</option>
+          <option value="4">4 - Good</option>
+          <option value="5">5 - Very Good</option>
+        </select>
+      </div>
+      <input type="text" id="entry-tags" placeholder="Tags (optional)">
+      <button id="save-entry">Save Entry</button>
+    </section>
+
+    <section class="recent-entries">
+      <h2>Recent Entries</h2>
+      
+      <div id="entry-list">
+        <p>No entries yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MindfulMe | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+  <script src="./journal.js"></script>
+</body>
+</html>

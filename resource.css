@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: EB Garamond, sans-serif;
+    background-image:linear-gradient(to right , #C97D60 , #F2E5D7 );
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #C97D60;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    background-color: #333;
+
+  }
+  
+  nav {
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color:#ffffff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    background-color: #F2E5D7;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .articles-list,
+  .resources-list,
+  .self-care-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .articles-list li,
+  .resources-list li,
+  .self-care-list li {
+    margin-bottom: 15px;
+  }
+  
+  .articles-list li a,
+  .resources-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .articles-list li a:hover,
+  .resources-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  .breathing-section .breathing-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .breathing-animation .circle {
+    width: 150px;
+    height: 150px;
+    background-image:linear-gradient(to right , #C97D60 , #e3dad0 );
+    border-radius: 50%;
+    margin-top:20px;
+    animation: breathing 8s infinite;
+  }
+  
+  .breathing-animation p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  @keyframes breathing {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button.btn {
+    padding: 10px 20px;
+    background-color:#e0977a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.btn:hover {
+    background-color: #218838;
+  }
+  
+  .self-care-list li {
+    color:#F2E5D7;
+    background-color: #e0977a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,135 @@
+body {
+    font-family: EB Garamond, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.top-strip {
+    background-color: #F2E5D7; /* Peacock blue */
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #03A9F4;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.login-btn {
+    background-color: #C97D60;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-left:10px;
+    border-top-left-radius: 8px;
+    /* border-bottom-left-radius: 8px; */
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.login-btn-container {
+    margin-left: auto; /* Push the container to the right */
+  }
+  
+
+.login-btn:hover {
+    background-color: #c97e60be;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:white;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius:125px;
+}
+
+.facts {
+    background-color: #f2e5d7a7;
+    padding: 40px;
+}
+
+.facts h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.facts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.facts li {
+    margin-bottom: 20px;
+}
+
+.quotes {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.quotes h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quotes blockquote {
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 5px solid #C97D60;
+}

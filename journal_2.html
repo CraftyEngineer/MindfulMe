@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Page</title>
+  <link rel="stylesheet" href="journal_2.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>Journal</h1>
+        <ul>
+            <li><a href="home_new.html">Home</a></li>
+            <li><a href="journal_2.html">Journal</a></li>
+            <li><a href="mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="resource.html">Resources</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+      <main>
+        <section class="journal-form">
+          <h2>New Journal Entry</h2>
+          <form id="entryForm">
+            <div class="form-group">
+              <label for="entryDate">Date:</label>
+              <input type="date" id="entryDate" name="entryDate" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="entryTitle">Title:</label>
+              <input type="text" id="entryTitle" name="entryTitle" placeholder="Entry title" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="entryContent">Content:</label>
+              <textarea id="entryContent" name="entryContent" rows="8" placeholder="Write your journal entry here..." required></textarea>
+            </div>
+      
+            <div class="form-group">
+              <label for="entryMood">Mood (1-5):</label>
+              <input type="number" id="entryMood" name="entryMood" min="1" max="5" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="entryTags">Tags (optional):</label>
+              <input type="text" id="entryTags" name="entryTags" placeholder="e.g., work, personal, fitness">
+            </div>
+      
+            <button type="submit" class="btn">Save Entry</button>
+          </form>
+      
+          <!-- <div class="form-group">
+            <button id="voice-record-button">Start Recording</button>
+            <p id="recording-status"></p>
+          </div>
+          
+          <div class="form-group">
+            <h3>Transcription:</h3>
+            <p id="transcription"></p>
+          </div>
+        
+          <button id="save-entry">Save Entry</button>
+          <button id="save-voice-entry" style="display: none;">Save Voice Entry</button>
+        </div> -->
+        
+        </section>
+      
+        <!-- Recent Entries List -->
+        <section class="recent-entries">
+          <h2>Recent Entries</h2>
+          <!-- Filter/Search options -->
+          <div class="filter-search">
+            <input type="text" id="searchBar" placeholder="Search by title or content...">
+            <select id="filterMood">
+              <option value="">Filter by mood</option>
+              <option value="">All</option>
+            <option value="1">1 : Very Low </option>
+            <option value="2">2 :  Low </option>
+            <option value="3">3 : Neutral </option>
+            <option value="4">4 : Good</option>
+            <option value="5">5 : Very Good </option>
+            </select>
+          </div>
+      
+          
+      
+          <!-- Entries List -->
+          <div class="entries-list">
+            <div class="entry">
+              <h3 class="entry-title">My First Entry</h3>
+              <p class="entry-meta">Date: 2024-09-06 | Mood: 4</p>
+              <p class="entry-snippet">Today I had a productive day at work...</p>
+              <div class="entry-actions">
+                <button class="btn btn-edit">Edit</button>
+                <button class="btn btn-delete">Delete</button>
+              </div>
+            </div>
+      
+            <div class="entry">
+              <h3 class="entry-title">Evening Walk</h3>
+              <p class="entry-meta">Date: 2024-09-05 | Mood: 5</p>
+              <p class="entry-snippet">Went for a walk this evening and felt great...</p>
+              <div class="entry-actions">
+                <button class="btn btn-edit">Edit</button>
+                <button class="btn btn-delete">Delete</button>
+              </div>
+            </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MindfulMe | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+  <script src="journal.js"></script>
+
+</body>
+</html>

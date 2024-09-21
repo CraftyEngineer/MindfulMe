@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindfulMe - Homepage</title>
+  <!-- Will Automatically Look For Style.css in static folder again -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  
+</head>
+<body>
+  <header>
+    <h1>MindfulMe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="mood-tracker.html">Mood Tracker</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to MindfulMe</h2>
+      <p>Your journey to mindfulness begins here. Track your thoughts, moods, and discover insights.</p>
+    </section>
+
+    <section class="quick-entry">
+      <h3>Quick Journal Entry</h3>
+      <textarea id="journal-entry" rows="5" placeholder="Write your thoughts..."></textarea>
+      <div class="mood-selection">
+        <label for="mood">Mood:</label>
+        <select id="mood">
+          <option value="1">1 - Very Low</option>
+          <option value="2">2 - Low</option>
+          <option value="3">3 - Neutral</option>
+          <option value="4">4 - Good</option>
+          <option value="5">5 - Very Good</option>
+        </select>
+      </div>
+      <button id="save-entry">Save Entry</button>
+    </section>
+
+    <section class="statistics">
+      <h3>Summary Statistics</h3>
+      <p>Total Entries: <span id="total-entries">0</span></p>
+      <p>Current Streak: <span id="current-streak">0</span> days</p>
+      <p>Average Mood: <span id="average-mood">N/A</span></p>
+    </section>
+
+    <section class="quote">
+      <h3>Motivational Quote of the Day</h3>
+      <blockquote id="quote-of-the-day">
+        "The best way to predict the future is to create it." - Peter Drucker
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MindfulMe | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <!--  This is Automatically Gonna Search For The JavaScript in Static Folder Btw -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MindfulMe - Homepage</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header> 
+        <nav>
+            <h1>Home</h1>
+            <ul>
+                <li><a href="home_new.html">Home</a></li>
+                <li><a href="journal_2.html">Journal</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="resource.html">Resources</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Quick Entry Section -->
+        <section class="quick-entry">
+            <h2>Quick Journal Entry</h2>
+            <form id="journal-form">
+                <label for="entry">What's on your mind?</label><br>
+                <textarea id="entry" name="entry" rows="5" cols="40" placeholder="Write a short journal entry..."></textarea><br><br>
+
+                <label for="mood">How do you feel? (1-5):</label><br>
+                <input type="number" id="mood" name="mood" min="1" max="5"><br><br>
+
+                <button type="submit">Save Entry</button>
+            </form>
+        </section>
+
+        <!-- Summary Statistics Section -->
+        <section class="summary-stats">
+            <h2>Summary Statistics</h2>
+            <p>Total Entries: <span id="total-entries">0</span></p>
+            <p>Current Streak: <span id="current-streak">0</span> days</p>
+            <p>Average Mood (Past Week): <span id="average-mood">N/A</span></p>
+        </section>
+
+        <!-- Motivational Quote Section -->
+        <section class="quote">
+            <h2>Motivational Quote of the Day</h2>
+            <p id="daily-quote">"The only journey is the one within." – Rainer Maria Rilke</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 MindfulMe. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+
+</body>
+</html>

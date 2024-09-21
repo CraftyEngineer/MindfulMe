@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Mood Tracker</title> -->
+  <link rel="stylesheet" href="journal_2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>Mood Tracker</h1>
+        <ul>
+            <li><a href="home_new.html">Home</a></li>
+            <li><a href="journal_2.html">Journal</a></li>
+            <li><a href="mood-tracker.html">Mood Tracker</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="resource.html">Resources</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Your Mood Over Time</h2>
+      <canvas id="mood-chart"></canvas>
+    </section>
+
+    <section>
+      <h2>Mood Distribution</h2>
+      <canvas id="mood-distribution"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MindfulMe | <a href="about.html">About</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
